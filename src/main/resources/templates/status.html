@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Status Page</title>
+</head>
+<body>
+	<h1>Login Status</h1>
+	<h2>
+	<!-- th:if - 條件顯示 -->
+		<div th:if="${isLogin}">歡迎回來!</div>
+		<div th:if="${!isLogin}">請先登入...</div>
+	</h2>
+</body>
+</html>
