@@ -23,4 +23,4 @@ COPY --from=builder /mythyeleaf0811/target/*.jar mythyeleaf0811.jar
 ENTRYPOINT ["java", "-jar", "mythyeleaf0811.jar"]
 
 # 宣告服務使用的 port（Render 預設讀取此值）
-EXPOSE 9090
+EXPOSE 8000
